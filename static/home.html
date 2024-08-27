@@ -4,54 +4,115 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Welcome to DevOps World</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Verdana', sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #f0f8ff;
+            color: #333;
         }
 
         header {
-            background-color: #333;
+            background-color: #4CAF50;
             color: #fff;
-            padding: 10px 0;
+            padding: 15px 0;
             text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
         nav ul {
             list-style-type: none;
             padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
         }
 
         nav ul li {
-            display: inline;
-            margin-right: 10px;
+            margin: 0 20px;
         }
 
         nav ul li a {
             color: #fff;
             text-decoration: none;
+            font-weight: bold;
+            padding: 10px 20px;
+            background-color: #333;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #555;
         }
 
         main {
-            padding: 20px;
+            padding: 40px;
+            max-width: 800px;
+            margin: 40px auto;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
         }
 
         section {
+            margin-bottom: 40px;
+        }
+
+        h1, h2 {
+            color: #007BFF;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 2em;
+            margin-bottom: 15px;
+        }
+
+        p {
+            line-height: 1.6;
+            font-size: 1.2em;
             margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .fun-content {
+            background-color: #ffeb3b;
+            padding: 20px;
+            border-radius: 8px;
+            font-size: 1.4em;
+            text-align: center;
+            margin-bottom: 40px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .fun-content span {
+            font-size: 1.8em;
+            color: #d32f2f;
         }
 
         footer {
-            background-color: #333;
+            background-color: #4CAF50;
             color: #fff;
             text-align: center;
-            padding: 10px 0;
+            padding: 20px;
             position: fixed;
             bottom: 0;
             width: 100%;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
         }
-    </style>    
+
+        footer p {
+            margin: 0;
+            font-size: 1em;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -67,25 +128,27 @@
 
     <main>
         <section>
-            <h1>Learn DevOps from Basics</h1>
-            <p>The main purpose of this website is to guide people on how to learn DevOps 
-                from basics for Free. We will provide you with the best resources to learn.
-            </p>
+            <h1>Welcome to DevOps Wonderland!</h1>
+            <p>Get ready to embark on an exciting journey through the world of DevOps! Here, we transform beginners into pros by guiding you step-by-step from the basics to advanced topics, all for free.</p>
+        </section>
+
+        <section class="fun-content">
+            <p><span>🚀 Fun Fact:</span> Did you know that DevOps practices can accelerate your software delivery speed by up to 200%? Who doesn’t love going faster?</p>
         </section>
 
         <section>
-            <h2>Overview</h2>
-            <p> Zero to Hero courses on all DevOps tools and popular Cloud(AWS and Azure) platform</p>
+            <h2>What's in Store?</h2>
+            <p>We cover everything from Zero to Hero in DevOps! Dive deep into tools, techniques, and best practices that will make you a DevOps master. And hey, if you’re into clouds, we’ve got you covered with the latest on AWS and Azure too!</p>
         </section>
 
         <section>
-            <h2>Courses Offered</h2>
-            <p>Please look at the <a href="courses">courses</a> section.</p>  
+            <h2>Explore Our Courses</h2>
+            <p>Our virtual classrooms are packed with interactive lessons, hands-on projects, and a community of learners just like you. Whether you're starting from scratch or looking to polish your skills, there's something for everyone.</p>
         </section>
     </main>
 
     <footer>
-        <p>&copy; Abhishek.Veeramalla</p>
+        <p>&copy; 2024 Ramnarendran Ramasamy - Let’s code, automate, and have fun!</p>
     </footer>
 </body>
 </html>

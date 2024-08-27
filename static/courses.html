@@ -1,52 +1,115 @@
-<DocType html>
-
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Learn DevOps from Basics</title>
         <style>
             body {
                 margin: 0;
                 padding: 0;
+                font-family: 'Arial', sans-serif;
+                background-color: #f0f4f8;
+                color: #333;
             }
 
             header {
-                background-color: #333;
+                background-color: #4CAF50;
                 color: #fff;
-                padding: 10px 0;
+                padding: 20px;
                 text-align: center;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             }
 
             nav ul {
                 list-style-type: none;
                 padding: 0;
+                margin: 0;
+                display: flex;
+                justify-content: center;
             }
 
             nav ul li {
-                display: inline;
-                margin-right: 10px;
+                margin: 0 15px;
             }
 
             nav ul li a {
                 color: #fff;
                 text-decoration: none;
+                font-weight: bold;
+                padding: 10px 20px;
+                background-color: #333;
+                border-radius: 5px;
+                transition: background-color 0.3s;
+            }
+
+            nav ul li a:hover {
+                background-color: #555;
             }
 
             main {
-                padding: 20px;
+                padding: 40px;
+                max-width: 800px;
+                margin: 40px auto;
+                background-color: #fff;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                border-radius: 8px;
             }
 
             section {
+                margin-bottom: 30px;
+            }
+
+            section h1 {
+                color: #4CAF50;
+                font-size: 2.5em;
+                margin-bottom: 20px;
+                text-align: center;
+            }
+
+            section h2 {
+                color: #007BFF;
+                margin-bottom: 15px;
+            }
+
+            section p {
+                line-height: 1.6;
+                font-size: 1.1em;
                 margin-bottom: 20px;
             }
 
             footer {
-                background-color: #333;
+                background-color: #4CAF50;
                 color: #fff;
                 text-align: center;
-                padding: 10px 0;
-                position: fixed;
-                bottom: 0;
-                width: 100%;
+                padding: 20px;
+                box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+            }
+
+            footer p {
+                margin: 0;
+                font-size: 1em;
+            }
+
+            .fun-content {
+                background-color: #e0f7fa;
+                padding: 20px;
+                border-radius: 8px;
+                text-align: center;
+                font-size: 1.2em;
+            }
+
+            .fun-content span {
+                font-size: 1.5em;
+                color: #ff5722;
+            }
+
+            .fun-section {
+                background-color: #fff3e0;
+                padding: 20px;
+                border-radius: 8px;
+                margin-top: 20px;
+                text-align: center;
             }
         </style>
     </head>
@@ -64,29 +127,39 @@
 
         <main>
             <section>
-                <h1>Learn DevOps from Basics</h1>
-                <p>DevOps is a set of practices that combines software development (Dev) and IT operations (Ops)</p>
-                <p>It aims to shorten the systems development life cycle and provide continuous delivery with high software quality. DevOps is complementary with Agile software development; several DevOps aspects came from Agile methodology</p>    
+                <h1>Welcome to DevOps Wonderland!</h1>
+                <p>Embark on a magical journey where Dev meets Ops, and together they create a world of continuous delivery, high-quality software, and endless learning.</p>
+                <p>Here, we turn complex systems into simple, automated workflows, making life easier and more fun for everyone. Ready to dive in?</p>
+            </section>
 
+            <section>
                 <h2>Main Tutorials</h2>
-                <p><a href="https://www.youtube.com/playlist?list=PLdpzxOOAlwvIKMhk8WhzN1pYoJ1YU8Csa">DevOps Zero to Hero</a></p>
-                <p><a href="https://www.youtube.com/playlist?list=PLdpzxOOAlwvLNOxX0RfndiYSt1Le9azze">AWS Zero to Hero</a></p>
-                <p><a href="https://www.youtube.com/playlist?list=PLdpzxOOAlwvIcxgCUyBHVOcWs0Krjx9xR">Azure Zero to Hero</a></p>
-                <p><a href="https://www.youtube.com/playlist?list=PLdpzxOOAlwvI0O4PeKVV1-yJoX2AqIWuf">Terraform Zero to Hero</a></p>
-                <p><a href="https://www.youtube.com/playlist?list=PLdpzxOOAlwvKwTyYNJCUwGPvql0TrsPgv">Python Zero to Hero</a></p>
+                <p>Get started with our hero-level tutorials, where you’ll learn the ropes and become a DevOps wizard in no time!</p>
 
+                <div class="fun-content">
+                    <p><span>💡 Pro Tip:</span> Always be curious! The more you explore, the more you'll discover in the land of DevOps!</p>
+                </div>
+            </section>
+
+            <section class="fun-section">
+                <h2>Did You Know?</h2>
+                <p>DevOps isn't just about tools and processes—it's also about teamwork, communication, and having fun while you build amazing things!</p>
+                <p><span>🎉 Fun Fact:</span> The term "DevOps" was coined in 2009, but the spirit of collaboration and innovation has been around much longer!</p>
+            </section>
+
+            <section>
                 <h2>Additional Tutorials</h2>
-                <p><a href="https://www.youtube.com/playlist?list=PLdpzxOOAlwvKv4MFW35XRskZbQbrt6ep-">Networking Fundamentals</a></p>
-                <p><a href="https://www.youtube.com/playlist?list=PLdpzxOOAlwvLxd5nmtmORCmhD5jkrNbuE">Ansible Zero to Hero</a></p>
-                <p><a href="https://www.youtube.com/playlist?list=PLdpzxOOAlwvKu7OZpgj1-MzJFqZ8RBp6f">GitOps Zero to Hero</a></p>
+                <p>Want to dive deeper? Check out our advanced tutorials and master the art of DevOps with hands-on projects and real-world scenarios.</p>
+            </section>
 
-                <h2>Troubleshooting Tutorials</h2>
-                <p><a href="https://www.youtube.com/playlist?list=PLdpzxOOAlwvIrFBI1farpLS_OSUBXJMLX">Troubleshooting Kubernetes</a></p>
+            <section>
+                <h2>Troubleshooting Adventures</h2>
+                <p>Sometimes things go wrong, but don't worry! Our troubleshooting guides will help you navigate through the toughest challenges with ease.</p>
             </section>
         </main>
 
         <footer>
-            <p>&copy; Abhishek.Veeramalla</p>
+            <p>&copy; 2024 Ramnarendran Ramasamy - Let's build something awesome together!</p>
         </footer>
     </body>
 </html>

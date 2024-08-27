@@ -1,4 +1,4 @@
-<Doctype html>
+<!DOCTYPE html>
 <html>
     <head>
         <title>Contact</title>
@@ -6,46 +6,99 @@
             body {
                 margin: 0;
                 padding: 0;
+                font-family: Arial, sans-serif;
+                background-color: #f0f8ff;
+                color: #333;
             }
 
             header {
-                background-color: #333;
+                background-color: #4CAF50;
                 color: #fff;
-                padding: 10px 0;
+                padding: 15px 0;
                 text-align: center;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             }
 
             nav ul {
                 list-style-type: none;
                 padding: 0;
+                margin: 0;
+                display: flex;
+                justify-content: center;
             }
 
             nav ul li {
-                display: inline;
-                margin-right: 10px;
+                margin: 0 15px;
             }
 
             nav ul li a {
                 color: #fff;
                 text-decoration: none;
+                font-weight: bold;
+                padding: 10px 20px;
+                background-color: #333;
+                border-radius: 5px;
+                transition: background-color 0.3s;
+            }
+
+            nav ul li a:hover {
+                background-color: #555;
             }
 
             main {
-                padding: 20px;
+                padding: 40px;
+                max-width: 800px;
+                margin: 20px auto;
+                background-color: #fff;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                border-radius: 8px;
             }
 
-            section {
+            section h1 {
+                color: #4CAF50;
                 margin-bottom: 20px;
             }
 
+            section p {
+                line-height: 1.6;
+                margin-bottom: 20px;
+            }
+
+            .contact-content {
+                background-color: #e0f7fa;
+                padding: 20px;
+                border-radius: 8px;
+                text-align: center;
+                font-size: 18px;
+            }
+
+            .contact-content a {
+                color: #fff;
+                text-decoration: none;
+                padding: 12px 25px;
+                background-color: #00796b;
+                border-radius: 5px;
+                transition: background-color 0.3s;
+            }
+
+            .contact-content a:hover {
+                background-color: #004d40;
+            }
+
             footer {
-                background-color: #333;
+                background-color: #4CAF50;
                 color: #fff;
                 text-align: center;
-                padding: 10px 0;
-                position: fixed;
+                padding: 15px 0;
+                position: relative;
                 bottom: 0;
                 width: 100%;
+                box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+            }
+
+            .footer-note {
+                font-size: 14px;
+                margin-top: 10px;
             }
         </style>
     </head>
@@ -64,5 +117,20 @@
         <main>
             <section>
                 <h1>Contact Us</h1>
-                <p>For any doubts while learning, Join our Members only exclusive slack channel</p>
-                <a href="https://www.youtube.com/abhishekVeeramalla/join">Join Slack</a>
+                <p>Got a question or just want to say hi? We'd love to hear from you! Whether you're stuck on a lesson or just want to chat about tech, we're here for you.</p>
+                
+                <div class="contact-content">
+                    <p>For any doubts while learning, Join our Members-only exclusive Slack channel!</p>
+                    <a>Join Slack</a>
+                </div>
+
+                <p>Want to stay connected with our latest content? Follow us on our social media channels or shoot us an email!</p>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Ramnarendran's DevOps Hub</p>
+            <div class="footer-note">"Stay curious, keep learning, and never stop growing!"</div>
+        </footer>
+    </body>
+</html>
